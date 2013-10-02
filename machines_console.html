@@ -1,0 +1,19 @@
+<html>
+
+        <body>
+               <!-- <form action="/static/ui/static/snf/extra/noVNC/vnc_auto.html" method="get">
+                        <input type="hidden" name="host" value={{host}}>
+                        <input type="hidden" name="port" value={{port}}>
+                        <input type="hidden" name="password" value={{password}}>
+                        <input type="submit" value="Submit">
+                </form>-->
+                <!--<meta HTTP-EQUIV="REFRESH" content="0; url=/static/ui/static/snf/extra/noVNC/vnc_auto.html?host={{host}}&port={{port}}&password={{password}}">-->
+                
+                <!--<meta HTTP-EQUIV="REFRESH" content="0; url=https://{{host}}:{{port}}?host={{host}}&port={{port}}&password={{password}}">-->
+                <script>
+                   target= "<meta HTTP-EQUIV=\"REFRESH\" content=\"0; url=https://{{host}}:{{port}}?target="+document.location.hostname+"&host={{host}}&port={{port}}&password={{password}}\">";
+                   document.write(target);
+                </script>
+                <!--<meta HTTP-EQUIV="REFRESH" content="0; url=https://{{host}}:{{port}}?target=<script>document.write(location.hostname);</script>host={{host}}&port={{port}}&password={{password}}">-->
+        </body>
+</html>
