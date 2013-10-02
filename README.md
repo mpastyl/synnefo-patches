@@ -22,4 +22,3 @@ The folowing changes were made to provide weboscket support for the console.
   Also, right now, the models.js script, run at console button press, makes the api call using wsvnc value as the default console type.
 
   To switch back to the old console, models.js needs to send vnc as console_type value and machines_console.html need to go back the way it was.
-
